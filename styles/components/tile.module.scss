@@ -1,0 +1,29 @@
+.tile {
+      padding: 2rem 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 1);
+      display: grid;
+      place-items: center;
+      color: white;
+      font-size: 20px;
+      border-radius: 0.5rem;
+}
+
+.tileRotate {
+      animation: rotate 0.5s linear
+}
+
+@media screen and (min-width: 700px) {
+      .tile {
+            font-size: 60px;
+      }
+}
+
+@keyframes rotate {
+      0% {
+            transform: rotateX(0deg)
+      }
+      100% {
+            transform: rotateX(90deg)
+      }
+}
